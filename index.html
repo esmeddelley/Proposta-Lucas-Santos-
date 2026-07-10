@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial Audiovisual | Lucas Santos</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #090d16;
+        }
+        .glow-gold {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+        }
+        .gradient-border {
+            background: linear-gradient(135deg, #f59e0b 0%, #3b82f6 100%);
+        }
+        /* Animação de carregamento smooth */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        /* Melhor feedback visual nos inputs */
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #f59e0b;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+            transition: all 0.2s;
+        }
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.6);
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #f59e0b;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+            transition: all 0.2s;
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50 px-4 py-3">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="p-1.5 bg-amber-500 rounded-lg text-slate-950 font-bold text-xs">FX30</span>
+                <span class="font-extrabold text-lg tracking-wider bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">PROPOSTA AUDIOVISUAL</span>
+            </div>
+            <!-- Contato Rápido -->
+            <a href="https://wa.me/5511913278658" target="_blank" class="flex items-center space-x-1.5 text-xs bg-slate-800 hover:bg-slate-700 text-amber-400 px-3 py-1.5 rounded-full transition-all border border-slate-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                </svg>
+                <span>Falar com Lucas</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-4xl mx-auto w-full px-4 py-6 flex-grow space-y-8">
+        
+        <!-- Apresentação do profissional -->
+        <section class="text-center space-y-3 py-4 fade-in">
+            <div class="inline-block px-3 py-1 bg-amber-500/10 border border-amber-500/20 rounded-full">
+                <span class="text-amber-400 text-xs font-semibold tracking-wider uppercase">Orçamento Personalizado</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">Criação de Conteúdo de Alto Impacto</h1>
+            <p class="text-slate-400 text-sm md:text-base max-w-xl mx-auto">
+                Vídeos criados estrategicamente para destacar sua marca, reter atenção e converter seguidores em clientes. Apresentado por <span class="text-white font-semibold">Lucas Santos</span>.
+            </p>
+        </section>
+
+        <!-- Calculadora de Orçamentos Interativa -->
+        <section class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6 fade-in">
+            <div class="border-b border-slate-800 pb-4">
+                <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                    <span class="p-1 bg-amber-500/10 text-amber-400 rounded-md">⚡</span>
+                    Monte sua Proposta Sob Medida
+                </h2>
+                <p class="text-xs text-slate-400 mt-1">Selecione o formato ideal para as suas redes sociais e veja o investimento final estimado.</p>
+            </div>
+
+            <!-- ETAPA 1: SELECIONAR MODELO DE CAPTAÇÃO -->
+            <div class="space-y-3">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Etapa 1: Selecione o Tipo de Produção</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    
+                    <!-- Opção 1: Profissional Diária -->
+                    <label class="relative flex flex-col justify-between p-5 rounded-xl border cursor-pointer transition-all hover:border-amber-500/50 bg-slate-950 select-none border-amber-500 bg-gradient-to-b from-amber-500/5 to-transparent" id="card-1">
+                        <input type="radio" name="service-option" value="diaria_cinema" checked class="sr-only" onchange="updateProposal()">
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <span class="px-2 py-0.5 bg-amber-500 text-slate-950 text-[10px] font-bold rounded-full uppercase">Qualidade Máxima</span>
+                                <div class="w-4 h-4 rounded-full border-2 border-amber-500 flex items-center justify-center bg-amber-500" id="radio-indicator-1">
+                                    <div class="w-1.5 h-1.5 bg-slate-950 rounded-full"></div>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-white text-base">Produção Profissional</h4>
+                            <p class="text-[11px] text-slate-400 mt-1">Câmera de Cinema, estabilização perfeita e iluminação profissional de estúdio.</p>
+                            <ul class="text-[11px] text-slate-300 mt-3 space-y-1.5">
+                                <li class="flex items-center gap-1.5">🎥 Sony FX30 Cinema</li>
+                                <li class="flex items-center gap-1.5">🎬 Gimbal DJI RS3</li>
+                                <li class="flex items-center gap-1.5">🎤 Áudio Lapela Limpo</li>
+                                <li class="flex items-center gap-1.5">💡 Set de Luzes Completo</li>
+                            </ul>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800">
+                            <span class="text-slate-400 text-[10px] block">Investimento Diária:</span>
+                            <span class="text-xl font-extrabold text-amber-400">R$ 1.200</span>
+                        </div>
+                    </label>
+
+                    <!-- Opção 2: Mobile Diária -->
+                    <label class="relative flex flex-col justify-between p-5 rounded-xl border cursor-pointer transition-all hover:border-amber-500/50 bg-slate-950 select-none border-slate-800" id="card-2">
+                        <input type="radio" name="service-option" value="mobile_diaria" class="sr-only" onchange="updateProposal()">
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <span class="px-2 py-0.5 bg-blue-500/20 text-blue-400 text-[10px] font-bold rounded-full uppercase">Tendência / Reels</span>
+                                <div class="w-4 h-4 rounded-full border-2 border-slate-700 flex items-center justify-center" id="radio-indicator-2">
+                                    <div class="w-1.5 h-1.5 rounded-full"></div>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-white text-base">Produção Mobile</h4>
+                            <p class="text-[11px] text-slate-400 mt-1">Captação prática e dinâmica perfeita para trends e entrega ultra rápida.</p>
+                            <ul class="text-[11px] text-slate-300 mt-3 space-y-1.5">
+                                <li class="flex items-center gap-1.5">📱 Gravação em iPhone</li>
+                                <li class="flex items-center gap-1.5">🚀 Edição Dinâmica Mobile</li>
+                                <li class="flex items-center gap-1.5">⚡ Pronto para Postar</li>
+                                <li class="flex items-center gap-1.5">🎯 Foco em viralização</li>
+                            </ul>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800">
+                            <span class="text-slate-400 text-[10px] block">Investimento Diária:</span>
+                            <span class="text-xl font-extrabold text-amber-400">R$ 800</span>
+                        </div>
+                    </label>
+
+                    <!-- Opção 3: Mobile Por Hora -->
+                    <label class="relative flex flex-col justify-between p-5 rounded-xl border cursor-pointer transition-all hover:border-amber-500/50 bg-slate-950 select-none border-slate-800" id="card-3">
+                        <input type="radio" name="service-option" value="mobile_hora" class="sr-only" onchange="updateProposal()">
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-400 text-[10px] font-bold rounded-full uppercase">Máxima Flexibilidade</span>
+                                <div class="w-4 h-4 rounded-full border-2 border-slate-700 flex items-center justify-center" id="radio-indicator-3">
+                                    <div class="w-1.5 h-1.5 rounded-full"></div>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-white text-base">Serviço por Hora</h4>
+                            <p class="text-[11px] text-slate-400 mt-1">Ideal para gravação rápida de pequenos lotes de vídeos ou eventos específicos.</p>
+                            <ul class="text-[11px] text-slate-300 mt-3 space-y-1.5">
+                                <li class="flex items-center gap-1.5">📱 Captação iPhone</li>
+                                <li class="flex items-center gap-1.5">✂️ Edição Completa</li>
+                                <li class="flex items-center gap-1.5">⏱️ Pague só o tempo usado</li>
+                                <li class="flex items-center gap-1.5">💡 Direto ao Ponto</li>
+                            </ul>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800">
+                            <span class="text-slate-400 text-[10px] block">Investimento por Hora:</span>
+                            <span class="text-xl font-extrabold text-amber-400">R$ 150 <span class="text-xs text-slate-500">/h</span></span>
+                        </div>
+                    </label>
+
+                </div>
+            </div>
+
+            <!-- CONTROLE DE HORAS (SÓ APARECE SE SELECIONAR OPÇÃO 3) -->
+            <div id="hour-selector-container" class="hidden bg-slate-950 border border-slate-800 p-4 rounded-xl space-y-3">
+                <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-slate-300">Tempo Estimado de Gravação:</span>
+                    <span class="text-sm font-bold text-amber-400" id="hour-display">2 horas</span>
+                </div>
+                <input type="range" id="hours-range" min="1" max="8" value="2" class="w-full accent-amber-500 cursor-pointer" oninput="updateHoursValue()">
+                <div class="flex justify-between text-[10px] text-slate-500">
+                    <span>1 Hora (Mínimo)</span>
+                    <span>4 Horas</span>
+                    <span>8 Horas (Diária completa)</span>
+                </div>
+            </div>
+
+            <!-- ETAPA 2: ADICIONAIS EXTRAS -->
+            <div class="space-y-3">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Etapa 2: Upgrade na Produção (Opcionais)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    
+                    <label class="flex items-center justify-between p-3.5 bg-slate-950 border border-slate-800 hover:border-slate-700 rounded-lg cursor-pointer select-none transition-all">
+                        <div class="flex items-center space-x-3">
+                            <input type="checkbox" id="opt-express" class="rounded border-slate-700 text-amber-500 focus:ring-amber-500 bg-slate-900 w-4 h-4" onchange="updateProposal()">
+                            <div>
+                                <span class="text-xs font-bold text-white block">Entrega Express (24 a 48h)</span>
+                                <span class="text-[10px] text-slate-400">Prioridade absoluta na ilha de edição.</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold text-amber-400">+ R$ 150</span>
+                    </label>
+
+                    <label class="flex items-center justify-between p-3.5 bg-slate-950 border border-slate-800 hover:border-slate-700 rounded-lg cursor-pointer select-none transition-all">
+                        <div class="flex items-center space-x-3">
+                            <input type="checkbox" id="opt-script" class="rounded border-slate-700 text-amber-500 focus:ring-amber-500 bg-slate-900 w-4 h-4" onchange="updateProposal()">
+                            <div>
+                                <span class="text-xs font-bold text-white block">Roteirização Direcionada</span>
+                                <span class="text-[10px] text-slate-400">Desenvolvimento de ganchos e roteiros focados em vendas.</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold text-amber-400">+ R$ 200</span>
+                    </label>
+
+                </div>
+            </div>
+
+            <!-- ETAPA 3: DETALHES DE VALOR E CONVERSÃO -->
+            <div class="bg-gradient-to-r from-slate-950 to-slate-900 border border-slate-800 p-6 rounded-xl flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Resumo do Investimento</h3>
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-3xl font-extrabold text-white" id="total-price-display">R$ 1.200,00</span>
+                        <span class="text-xs text-amber-400 font-semibold" id="price-type-suffix">por projeto</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2 flex items-center gap-1" id="selected-service-text">
+                        <span>📦</span> Produção de Cinema Profissional Completa.
+                    </p>
+                </div>
+                <div class="w-full md:w-auto flex flex-col gap-2">
+                    <button onclick="sendToWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-lg text-sm transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-emerald-500/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                        </svg>
+                        <span>Aprovar via WhatsApp</span>
+                    </button>
+                    <p class="text-[10px] text-center text-slate-400">Envia as escolhas acima diretamente para o WhatsApp de Lucas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gatilhos Mentais & Diferenciais -->
+        <section class="space-y-4 fade-in">
+            <h2 class="text-sm font-bold text-slate-400 uppercase tracking-wider text-center">Por que fechar esta parceria de produção?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <div class="p-5 bg-slate-900/30 border border-slate-800 rounded-xl space-y-2 hover:border-amber-500/30 transition-all">
+                    <div class="text-xl">🏆</div>
+                    <h4 class="font-bold text-white text-sm">Estética de Cinema que Gera Desejo</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Vídeos de baixa qualidade desvalorizam o produto. Gravando com a Sony FX30 e Gimbal RS3, sua marca ganha autoridade visual instantânea frente aos concorrentes do Instagram.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-slate-900/30 border border-slate-800 rounded-xl space-y-2 hover:border-amber-500/30 transition-all">
+                    <div class="text-xl">🚀</div>
+                    <h4 class="font-bold text-white text-sm">Foco em Engajamento Real (Mobile)</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Para Reels e TikToks rápidos, utilizamos o iPhone para gravação nativa e edição ágil, otimizando o algoritmo de entrega de conteúdo vertical orgânico.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-slate-900/30 border border-slate-800 rounded-xl space-y-2 hover:border-amber-500/30 transition-all">
+                    <div class="text-xl">⏱️</div>
+                    <h4 class="font-bold text-white text-sm">Compromisso com Prazo e Organização</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Atrasos no feed significam menos vendas. Com o cronograma alinhado, garantimos uma entrega pontual e um processo simples e transparente sem burocracias.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-slate-900/30 border border-slate-800 rounded-xl space-y-2 hover:border-amber-500/30 transition-all">
+                    <div class="text-xl">📊</div>
+                    <h4 class="font-bold text-white text-sm">Roteiros Estruturados para Vender</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Cada captação é planejada com antecedência para que tenha ganchos poderosos nos primeiros 3 segundos, evitando que o espectador passe o vídeo.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção de "Print Screen" Prontinho para Instagram -->
+        <section class="border border-slate-800 rounded-2xl overflow-hidden bg-slate-950 p-6 space-y-4 fade-in">
+            <div class="text-center space-y-1">
+                <span class="text-xs font-semibold text-amber-500">FORMATO EXPORTÁVEL</span>
+                <h3 class="text-base font-bold text-white">Visualizador de Direct / Print Screen</h3>
+                <p class="text-xs text-slate-400 max-w-md mx-auto">Quer guardar uma imagem rápida da proposta? Tire um print da tela abaixo ou envie para seu sócio/diretoria.</p>
+            </div>
+
+            <!-- Bloco de Print Personalizável -->
+            <div id="print-canvas" class="max-w-sm mx-auto bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/20 rounded-2xl p-6 space-y-6 shadow-2xl relative">
+                <!-- Efeitos de iluminação decorativos no print -->
+                <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-full filter blur-xl"></div>
+                
+                <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                    <div>
+                        <span class="text-[9px] font-bold text-amber-500 tracking-wider uppercase block">Proposta Comercial</span>
+                        <span class="text-xs font-extrabold text-white" id="p-client-name">PLANO SELECIONADO</span>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[9px] text-slate-400 block" id="print-date">JULHO 2026</span>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="space-y-1">
+                        <h4 class="text-sm font-bold text-white" id="p-service-title">Produção Profissional (Diária)</h4>
+                        <p class="text-[10px] text-slate-400" id="p-service-desc">Câmera de Cinema FX30 + Gimbal RS3 + Luz & Áudio Profissional.</p>
+                    </div>
+
+                    <div class="p-3 bg-slate-950/80 rounded-lg border border-slate-800">
+                        <span class="text-[9px] text-slate-500 block">Investimento Total Estimado</span>
+                        <div class="flex items-baseline gap-1.5 mt-0.5">
+                            <span class="text-lg font-black text-amber-400" id="p-service-price">R$ 1.200,00</span>
+                            <span class="text-[9px] text-slate-400" id="p-service-type">/diária</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest block">Incluso no Atendimento:</span>
+                        <div class="grid grid-cols-2 gap-2 text-[10px]" id="p-inclusions-list">
+                            <span class="text-slate-300 flex items-center gap-1">✓ Captura Premium</span>
+                            <span class="text-slate-300 flex items-center gap-1">✓ Estabilização Ativa</span>
+                            <span class="text-slate-300 flex items-center gap-1">✓ Iluminação de Cena</span>
+                            <span class="text-slate-300 flex items-center gap-1">✓ Áudio Lapela</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rodapé do print -->
+                <div class="border-t border-slate-800/80 pt-4 flex justify-between items-center text-[9px] text-slate-400">
+                    <div>
+                        <span class="block text-white font-medium" id="p-author-name">Lucas Santos</span>
+                        <span id="p-author-insta">@lucaskory</span>
+                    </div>
+                    <div class="text-right">
+                        <span class="block">Garantia de Qualidade</span>
+                        <span class="text-amber-500 font-bold">Solicite as datas!</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão para copiar print -->
+            <div class="flex gap-2 justify-center mt-4">
+                <button onclick="takeScreenshot()" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-amber-400 px-4 py-2 rounded-lg text-xs font-semibold transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Capturar Proposta
+                </button>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500 space-y-2">
+        <p>© 2026 Lucas Santos. Todos os direitos reservados.</p>
+        <p class="text-[10px]">Criação de Conteúdo Audiovisual Estratégico.</p>
+    </footer>
+
+    <!-- Script de Funcionamento -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+        window.onload = function() {
+            // Data Atual Formatada
+            const date = new Date();
+            const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+            document.getElementById('print-date').textContent = `${meses[date.getMonth()].toUpperCase()} ${date.getFullYear()}`;
+
+            updateProposal();
+        }
+
+        // Atualização de horas slider
+        function updateHoursValue() {
+            const hours = document.getElementById('hours-range').value;
+            document.getElementById('hour-display').textContent = `${hours} ${hours == 1 ? 'hora' : 'horas'}`;
+            updateProposal();
+        }
+
+        // Função de Atualização da Proposta Inteira
+        function updateProposal() {
+            const selectedOption = document.querySelector('input[name="service-option"]:checked').value;
+            const isExpress = document.getElementById('opt-express').checked;
+            const isScript = document.getElementById('opt-script').checked;
+            const hourContainer = document.getElementById('hour-selector-container');
+
+            let basePrice = 0;
+            let priceSuffix = "por projeto";
+            let serviceText = "";
+            let pTitle = "";
+            let pDesc = "";
+            let pType = "";
+            let inclusionsHtml = "";
+
+            // Reset visual dos cards
+            for(let i=1; i<=3; i++) {
+                const card = document.getElementById(`card-${i}`);
+                const indicator = document.getElementById(`radio-indicator-${i}`);
+                card.className = "relative flex flex-col justify-between p-5 rounded-xl border cursor-pointer transition-all hover:border-amber-500/50 bg-slate-950 select-none border-slate-800";
+                indicator.className = "w-4 h-4 rounded-full border-2 border-slate-700 flex items-center justify-center";
+                indicator.innerHTML = '<div class="w-1.5 h-1.5 rounded-full"></div>';
+            }
+
+            if (selectedOption === 'diaria_cinema') {
+                hourContainer.classList.add('hidden');
+                basePrice = 1200;
+                priceSuffix = "por diária";
+                serviceText = "🎥 Produção de Cinema Profissional Completa (Câmera FX30 + Estabilizador RS3).";
+                pTitle = "Produção Profissional (Diária)";
+                pDesc = "Câmera de Cinema FX30, Gimbal RS3, Lente, Microfone e Luzes.";
+                pType = "/diária";
+                inclusionsHtml = `
+                    <span class="text-slate-300 flex items-center gap-1">🎥 Sony FX30 Cinema</span>
+                    <span class="text-slate-300 flex items-center gap-1">🎬 Gimbal DJI RS3</span>
+                    <span class="text-slate-300 flex items-center gap-1">🎤 Áudio Limpo</span>
+                    <span class="text-slate-300 flex items-center gap-1">💡 Set de Luzes</span>
+                `;
+                
+                // Visual ativo card 1
+                const activeCard = document.getElementById('card-1');
+                activeCard.className = "relative flex flex-col justify-between p-5 rounded-xl border cursor-pointer transition-all hover:border-amber-500/50 bg-slate-950 select-none border-amber-500 bg-gradient-to-b from-amber-500/5 to-transparent";
+                document.getElementById('radio-indicator-1').className = "w-4 h-4 rounded-full border-2 border-amber-500 flex items-center justify-center bg-amber-500";
+                document.getElementById('radio-indicator-1').innerHTML = '<div class="w-1.5 h-1.5 bg-slate-950 rounded-full"></div>';
+
+            } else if (selectedOption === 'mobile_diaria') {
+                hourContainer.classList.add('hidden');
+                basePrice = 800;
+                priceSuffix = "por diária";
+                serviceText = "📱 Captação e Edição completa feitas diretamente no iPhone.";
+                pTitle = "Produção Mobile (Celular)";
+                pDesc = "Captação dinâmica em iPhone ideal para Reels e TikTok.";
+                pType = "/diária";
+                inclusionsHtml = `
+                    <span class="text-slate-300 flex items-center gap-1">📱 Captura iPhone</span>
+                    <span class="text-slate-300 flex items-center gap-1">✂️ Edição Completa</span>
+                    <span class="text-slate-300 flex items-center gap-1">⚡ Entrega Dinâmica</span>
+                    <span class="text-slate-300 flex items-center gap-1">🎯 Foco em Reels</span>
+                `;
+
+                // Visual ativo card 2
+                const activeCard = document.getElementById('card-2');
+                activeCard.className = "relative flex flex-col justify-between p-5 rounded-xl border cursor-pointer transition-all hover:border-amber-500/50 bg-slate-950 select-none border-amber-500 bg-gradient-to-b from-amber-500/5 to-transparent";
+                document.getElementById('radio-indicator-2').className = "w-4 h-4 rounded-full border-2 border-amber-500 flex items-center justify-center bg-amber-500";
+                document.getElementById('radio-indicator-2').innerHTML = '<div class="w-1.5 h-1.5 bg-slate-950 rounded-full"></div>';
+
+            } else if (selectedOption === 'mobile_hora') {
+                hourContainer.classList.remove('hidden');
+                const hours = parseInt(document.getElementById('hours-range').value);
+                basePrice = 150 * hours;
+                priceSuffix = `por ${hours} ${hours == 1 ? 'hora' : 'horas'}`;
+                serviceText = `⏱️ Serviço por Hora Mobile com iPhone. Total de ${hours} ${hours == 1 ? 'hora' : 'horas'} inclusas.`;
+                pTitle = `Produção por Hora (${hours}h)`;
+                pDesc = `Captação dinâmica com iPhone e edição integrada.`;
+                pType = ` total`;
+                inclusionsHtml = `
+                    <span class="text-slate-300 flex items-center gap-1">📱 Atendimento Flex</span>
+                    <span class="text-slate-300 flex items-center gap-1">⏱️ ${hours}h de Captação</span>
+                    <span class="text-slate-300 flex items-center gap-1">✂️ Edição do Lote</span>
+                    <span class="text-slate-300 flex items-center gap-1">📲 Captura Mobile</span>
+                `;
+
+                // Visual ativo card 3
+                const activeCard = document.getElementById('card-3');
+                activeCard.className = "relative flex flex-col justify-between p-5 rounded-xl border cursor-pointer transition-all hover:border-amber-500/50 bg-slate-950 select-none border-amber-500 bg-gradient-to-b from-amber-500/5 to-transparent";
+                document.getElementById('radio-indicator-3').className = "w-4 h-4 rounded-full border-2 border-amber-500 flex items-center justify-center bg-amber-500";
+                document.getElementById('radio-indicator-3').innerHTML = '<div class="w-1.5 h-1.5 bg-slate-950 rounded-full"></div>';
+            }
+
+            // Calcular taxas adicionais
+            if (isExpress) basePrice += 150;
+            if (isScript) basePrice += 200;
+
+            // Renderizar na página principal
+            document.getElementById('total-price-display').textContent = `R$ ${basePrice.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+            document.getElementById('price-type-suffix').textContent = priceSuffix;
+            document.getElementById('selected-service-text').textContent = serviceText;
+
+            // Renderizar no bloco de print screen
+            document.getElementById('p-service-title').textContent = pTitle;
+            document.getElementById('p-service-desc').textContent = pDesc;
+            document.getElementById('p-service-price').textContent = `R$ ${basePrice.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+            document.getElementById('p-service-type').textContent = pType;
+            document.getElementById('p-inclusions-list').innerHTML = inclusionsHtml;
+        }
+
+        // Enviar os dados direto pro WhatsApp
+        function sendToWhatsApp() {
+            const selectedOption = document.querySelector('input[name="service-option"]:checked').value;
+            const isExpress = document.getElementById('opt-express').checked;
+            const isScript = document.getElementById('opt-script').checked;
+            const hours = document.getElementById('hours-range').value;
+            const totalPrice = document.getElementById('total-price-display').textContent;
+
+            let descPacote = "";
+            if (selectedOption === 'diaria_cinema') {
+                descPacote = "Produção Profissional (Diária Cinema)";
+            } else if (selectedOption === 'mobile_diaria') {
+                descPacote = "Produção Mobile Completa (Diária iPhone)";
+            } else {
+                descPacote = `Produção Mobile por Hora (${hours} horas)`;
+            }
+
+            let upgrades = [];
+            if (isExpress) upgrades.push("Entrega Express (24 a 48h)");
+            if (isScript) upgrades.push("Roteirização Direcionada");
+            
+            let upgradesText = upgrades.length > 0 ? `\n*Adicionais:* ${upgrades.join(', ')}` : "";
+
+            const text = `Olá Lucas! Acabei de acessar seu orçamento online e gostaria de seguir com a seguinte proposta:\n\n*Pacote:* ${descPacote}${upgradesText}\n*Investimento Estimado:* ${totalPrice}\n\nPodemos fechar as datas?`;
+            
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/5511913278658?text=${encodedText}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Função para capturar screenshot da proposta
+        async function takeScreenshot() {
+            const printCanvas = document.getElementById('print-canvas');
+            
+            try {
+                const canvas = await html2canvas(printCanvas, {
+                    backgroundColor: null,
+                    scale: 2,
+                    useCORS: true,
+                    allowTaint: true
+                });
+                
+                // Criar link de download
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = `proposta-audiovisual-${new Date().getTime()}.png`;
+                link.click();
+                
+                // Feedback visual
+                showNotification('✅ Proposta capturada com sucesso!');
+            } catch (error) {
+                console.error('Erro ao capturar:', error);
+                showNotification('❌ Erro ao capturar proposta. Tente novamente.');
+            }
+        }
+
+        // Função para mostrar notificações
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.className = 'fixed bottom-4 right-4 bg-slate-800 text-white px-4 py-3 rounded-lg shadow-lg border border-slate-700 text-sm font-semibold z-50 animate-pulse';
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
